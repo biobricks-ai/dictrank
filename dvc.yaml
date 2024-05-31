@@ -1,0 +1,17 @@
+stages:
+  status:
+    cmd: python code/00_status.py
+  download:
+    cmd: python code/01_download.py
+    deps:
+      - status.txt
+      - code/01_download.py
+    outs:
+      - download/
+  process:
+    cmd: python code/02_process.py
+    deps:
+      - download/
+      - code/02_process.py
+    outs:
+      - brick/
