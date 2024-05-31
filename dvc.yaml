@@ -7,7 +7,7 @@ stages:
       - status.txt
       - code/01_download.py
     outs:
-      - download/
+      - download/dictrank_dataset.xlsx
   process:
     cmd: python code/02_process.py
     deps:

@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  status:
+    cmd: python code/00_status.py
+  download:
+    cmd: python code/01_download.py
+    deps:
+    - path: code/01_download.py
+      hash: md5
+      md5: b15ac1d11b2283ecca75b9794069ab5b
+      size: 555
+    - path: status.txt
+      hash: md5
+      md5: 977d40866aa37d02b16a08078386abe3
+      size: 36961
+    outs:
+    - path: download/dictrank_dataset.xlsx
+      hash: md5
+      md5: 309a2d70c30d32b1dcece87855dd7f2d
+      size: 94888
+  process:
+    cmd: python code/02_process.py
+    deps:
+    - path: code/02_process.py
+      hash: md5
+      md5: 267175af5a5a68af6f9db19e815457d7
+      size: 591
+    - path: download/
+      hash: md5
+      md5: b6a0a9cd3228ea628b6b548181b5dd1f.dir
+      size: 94888
+      nfiles: 1
+    outs:
+    - path: brick/
+      hash: md5
+      md5: 2400cf34487ae4725e4af2e7a415ca98.dir
+      size: 71596
+      nfiles: 1
