@@ -4,9 +4,7 @@
         "dockerfile": "Dockerfile",
         "context": "..",
         "args": {
-            "BIOBRICKS_TOKEN": "${localEnv:BIOBRICKS_TOKEN}",
-            "AWS_ACCESS_KEY_ID": "${localEnv:AWS_ACCESS_KEY_ID}",
-            "AWS_SECRET_ACCESS_KEY": "${localEnv:AWS_SECRET_ACCESS_KEY}"
+            "BIOBRICKS_TOKEN": "${localEnv:BIOBRICKS_TOKEN}"
         }
     },
     "features": {
