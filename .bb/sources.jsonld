@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "dcat:Dataset",
+  "dcterms:title": "DICTrank FDA Cardiotoxicity Dataset",
+  "dcterms:description": "Drug-Induced Cardiotoxicity Rank (DICTrank) dataset from FDA with biological features including Cell Painting, Gene Expression, Gene Ontology, and SIDER side effects.",
+  "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
+  "prov:wasDerivedFrom": {
+    "@type": "dcat:Dataset",
+    "@id": "https://doi.org/10.6084/m9.figshare.24312274",
+    "dcterms:identifier": "24312274",
+    "dcat:downloadURL": "https://figshare.com/articles/dataset/DICTrank_data/24312274"
+  },
+  "prov:generatedAtTime": "2026-01-11"
+}
