@@ -1,0 +1,7 @@
+stages:
+  build:
+    cmd: .venv/bin/python stages/01_download_build.py
+    deps:
+      - stages/01_download_build.py
+    outs:
+      - brick
